@@ -99,7 +99,7 @@ function ctrlfd_start($_) {
 
         $_('img, input[type=image]').each(function() {
           var r = $_(this), w = r.width(), h = r.height();
-          r.css({width: r.width(), height: r.height()}).removeAttr('srcset').attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==').width(w).height(h);
+          $('img, input[type=image]').each(function(){var r=$(this),w=r.width(),h=r.height();r.removeAttr('srcset').removeAttr('sizes');r.css({width:w,height:h});r.attr('src','data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==');});
         });
 
         var s = document.createElement("style");
