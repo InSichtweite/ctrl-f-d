@@ -15,7 +15,7 @@ function rgb2hex(rgb) {rgb = rgb.replace(/\s/g, "").replace(/^(rgb\()(\d+),(\d+)
 function hex(x) {var hexDigits = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8","9", "A", "B", "C", "D", "E", "F"); return isNaN(x) ? "00" : hexDigits[(x-x%16)/16] + hexDigits[x%16];}
 
 var $_ = false, $ctrl_f_d = document.createElement('script'), local = true;
-$ctrl_f_d.src = 'http://assets.gleuch.com/jquery-latest.js';
+$ctrl_f_d.src = 'https://code.jquery.com/jquery-1.11.3.min.js';
 $ctrl_f_d.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild($ctrl_f_d);
 
