@@ -99,7 +99,7 @@ function ctrlfd_start($_) {
 
         $_('img, input[type=image]').each(function() {
           var r = $_(this), w = r.width(), h = r.height();
-          r.css({width: r.width(), height: r.height()}).attr('src', 'http://assets.gleuch.com/blank.png').width(w).height(h);
+          r.css({width: r.width(), height: r.height()}).attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==').width(w).height(h);
         });
 
         var s = document.createElement("style");
